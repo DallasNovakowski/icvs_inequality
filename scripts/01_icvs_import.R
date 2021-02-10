@@ -8,8 +8,7 @@ library(dplyr) # for glimpse and filter functions
 library(sjlabelled)
 library(kableExtra)
 
-rawest_data <- read_sav("C:/Users/dalla/Google Drive/R Coding/icvs_inequality/data/ICVS2005_3.sav")  # Reading data
-
+rawest_data <- read_sav("C:/Users/dalla/Google Drive/R Coding/ICVS2005_3.sav")  # Reading data
 
 jan_data <- rawest_data %>% 
   mutate_all(as_factor) %>%   # convert all variables from chr+lbl to fct type          
